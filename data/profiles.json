@@ -1,0 +1,22 @@
+{
+    "perfiles": [
+      {
+        "correo": "juan@example.com",
+        "nombre": "Juan Pérez",
+        "instrumento": "Guitarra",
+        "precio": "$15/hora",
+        "ubicacion": "Ciudad de México",
+        "rating": 4.8,
+        "imagen": "assets/guitar_teacher.jpg"
+      },
+      {
+        "correo": "gerardo@gmail.com",
+        "nombre": "Gerardo Esparza",
+        "instrumento": "Piano",
+        "precio": "$20/hora",
+        "ubicacion": "Buenos Aires",
+        "rating": 4.9,
+        "imagen": "assets/piano_teacher.jpg"
+      }
+    ]
+  }  

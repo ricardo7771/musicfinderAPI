@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "profesor_id": 102,
+        "estudiante_id": 202,
+        "fecha": "2025-02-20",
+        "hora": "15:30",
+        "lugar": "Online",
+        "estado": "cancelada"
+    },
+    {
+        "id": 2,
+        "profesor_id": 101,
+        "estudiante_id": 202,
+        "fecha": "2025-02-20",
+        "hora": "15:30",
+        "lugar": "Online",
+        "estado": "cancelada"
+    },
+    {
+        "id": 3,
+        "profesor_id": 103,
+        "estudiante_id": 202,
+        "fecha": "2025-02-20",
+        "hora": "15:30",
+        "lugar": "Online",
+        "estado": "pendiente"
+    },
+    {
+        "id": 4,
+        "profesor_id": 103,
+        "estudiante_id": 202,
+        "fecha": "2025-02-20",
+        "hora": "15:30",
+        "lugar": "Online",
+        "estado": "pendiente"
+    },
+    {
+        "id": 5,
+        "profesor_id": 103,
+        "estudiante_id": 202,
+        "fecha": "2025-02-20",
+        "hora": "15:30",
+        "lugar": "Online",
+        "estado": "pendiente"
+    }
+]
