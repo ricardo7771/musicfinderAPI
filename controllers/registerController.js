@@ -1,40 +1,27 @@
-const fs = require("fs");
+require("dotenv").config();
 
-const usersFile = "data/users.json";
+const usersFile = require("../models/model");
 
 // Función para registrar un usuario
-exports.register = (req, res) => {
+exports.register = async (req, res) => {
   const { nombre, correo, contraseña, rol } = req.body;
 
   if (!nombre || !correo || !contraseña || !rol) {
     return res.status(400).json({ mensaje: "Todos los campos son necesarios" });
   }
+ try {
+const existingUser= await usersFile.findOne({correo});
+if(existingUser){
+  return res.status(400).json({mensaje: "El correo ya esta registrado, intenta con otro"})
+}
+  const newuser= new usersFile({nombre, correo, contraseña, rol});
 
-  fs.readFile(usersFile, (err, data) => {
-    if (err) {
-      return res.status(500).json({ mensaje: "Error al leer el archivo" });
-    }
-    const usuarios = JSON.parse(data).usuarios;
-    const existingUser = usuarios.find((user) => user.correo === correo);
-    if (existingUser) {
-      return res.status(400).json({ mensaje: "El correo ya está registrado" });
-    }
+  await newuser.save();
 
-    const newUser = {
-      nombre,
-      correo,
-      contraseña,
-      rol,
-    };
+    res.status(201).json({mensaje: "Usuario registrado exitosamente"});
+     }catch(error){
 
-    usuarios.push(newUser);
-
-    fs.writeFile(usersFile, JSON.stringify({ usuarios }, null, 2), (err) => {
-      if (err) {
-        return res.status(500).json({ mensaje: "Error al guardar el nuevo usuario" });
-      }
-
-      res.status(201).json({ mensaje: "Usuario registrado exitosamente" });
-    });
-  });
+      res.status(500).json({mensaje: "Error de servidor", error});
+     }
+ 
 };

@@ -1,30 +1,36 @@
-const fs = require("fs");
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
+const usersFile = require("../models/model") ;
 
-const usersFile = "data/users.json";
+
 
 // Función para login
-exports.login = (req, res) => {
+exports.login = async (req, res) => {
   const { correo, contraseña } = req.body;
 
   if (!correo || !contraseña) {
     return res.status(400).json({ mensaje: "Correo y contraseña son obligatorios" });
   }
+try {
+  const usuario = await usersFile.findOne({correo});
+  if(!usuario){
+    return res.status(401).json({mensaje: "Credenciales incorrectas"})  }
 
-  fs.readFile(usersFile, (err, data) => {
-    if (err) {
-      return res.status(500).json({ mensaje: "Error al leer la base de datos" });
+    if(usuario.contraseña !== contraseña){
+      return res.status(401).json({mensaje :" Credenciales incorrecta"})
     }
 
-    const usuarios = JSON.parse(data).usuarios;
-    const usuario = usuarios.find((user) => user.correo === correo && user.contraseña === contraseña);
 
-    if (!usuario) {
-      return res.status(401).json({ mensaje: "Credenciales incorrectas" });
-    }
+    const token = jwt.sign(
+      { correo: usuario.correo, rol: usuario.rol },
+      process.env.JWT_SECRET, // Asegúrate de que tienes una variable de entorno JWT_SECRET definida
+      { expiresIn: "1h" }
+    );
+    
 
-    const token = jwt.sign({ correo: usuario.correo, rol: usuario.rol }, "secreto", { expiresIn: "1h" });
+res.json({ mensaje: "Inicio de sesión exitoso", token, rol: usuario.rol });
+} catch (error) {
+  res.status(500).json({ mensaje: "Error en el servidor", error });
+}
 
-    res.json({ mensaje: "Inicio de sesión exitoso", token, rol: usuario.rol });
-  });
 };

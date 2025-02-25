@@ -77,6 +77,12 @@
       "correo": "lalo@gmail.com",
       "contraseña": "lalo",
       "rol": "Profesor"
+    },
+    {
+      "nombre": "pedrioto",
+      "correo": "pedrioto@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
     }
   ]
 }
