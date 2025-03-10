@@ -1,0 +1,142 @@
+{
+  "perfiles": [
+    {
+      "id": "2a21b8a7-b49b-492b-a62f-abc4203e1748",
+      "correo": "laila@gmail.com",
+      "nombre": "laila",
+      "instrumento": "saxofon",
+      "precio": "280/hora",
+      "ubicacion": "Merida, Yucatan",
+      "rating": 5,
+      "imagen": "assets/violin_teacher.jpg",
+      "descripcion": "Soy una maestra apasionada por la musica y la enseñanza, tengo 10 años de experinecia en la rama de la educacion e viajado por el mundo enseñando a diferentes perosonas de diferentes edades a encontra su musico interior y a explotar su maximo potencial reserva conmigo y te aseguro que en tu primer clase te llevaras una experiencia gratifcante y motivacional para continuar en el mundo de la musica",
+      "rol": "Profesor"
+    },
+    {
+      "id": "6e5d4226-4dc0-45e5-a665-edc6f7b89038",
+      "correo": "alex@daouse.com",
+      "nombre": "Alex",
+      "instrumento": "Clases de Violín",
+      "precio": "$300/hora",
+      "ubicacion": "Merida",
+      "rating": 5,
+      "imagen": "assets/violin_teacher.jpg",
+      "descripcion": "Soy una profesora apasionada por la música y el violín...",
+      "rol": "Profesor"
+    },
+    {
+      "id": "9f319996-47ac-459d-95da-f7be74b2b139",
+      "correo": "pepe@gmail.com",
+      "nombre": "pepe",
+      "instrumento": "Oboe",
+      "precio": "$300/hora",
+      "ubicacion": "Opichen, Merida",
+      "rating": 0,
+      "imagen": "",
+      "descripcion": "Soy maestro recien egresado con ganas de enseñar y de paso aprender de mis estudiantes ya que en la musica no se deja de aprender nunca, reserva una calse conmigo y tendras la mejor experiencia musical de tu vida!!!!!",
+      "rol": "Profesor"
+    },
+    {
+      "id": "54e264f5-ef5b-41eb-a4d3-0fae0a56901e",
+      "correo": "sam@gmail.com",
+      "nombre": "sam",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/violin_teacher.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "5a9dc641-4df7-48db-8698-5483623e40d9",
+      "correo": "ejemplooo@gmail.com",
+      "nombre": "ejemplo",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "29e1a9db-9b89-479c-84c7-4beb0db3805c",
+      "correo": "ejemplo3@gmail.com",
+      "nombre": "ejemplo3",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+      "correo": "ejemplo4@gmail.com",
+      "nombre": "ejemplo4",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "91746f7d-0551-46c2-b8a5-00f952c81301",
+      "correo": "ejemplo5@gmail.com",
+      "nombre": "ejemplo5",
+      "instrumento": "Guitarra, VIOLIN",
+      "precio": "197",
+      "ubicacion": {
+        "latitud": "20.98644448928465",
+        "longitud": "-89.61195945739746"
+      },
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Me gusta mucho la musica",
+      "rol": "Profesor"
+    },
+    {
+      "id": "a2a43b03-3ee3-4e44-a25a-ed360607331f",
+      "correo": "juan@perez.com",
+      "nombre": "ppp",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "96afbe9f-3913-4936-86e1-c76c5863eb7d",
+      "correo": "Raul@gmail.com",
+      "nombre": "Raul",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "963d4950-c2a0-49a3-ab21-109d63aaad02",
+      "correo": "alexis@gmail.com",
+      "nombre": "ezparza",
+      "instrumento": "Instrumento no especificado",
+      "precio": "",
+      "ubicacion": {
+        "latitud": "20.964805898620458",
+        "longitud": "-89.59804875179577"
+      },
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    }
+  ]
+}

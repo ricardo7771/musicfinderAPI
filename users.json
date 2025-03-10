@@ -1,0 +1,64 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Juan Pérez",
+      "correo": "juan@example.com",
+      "contraseña": "123456",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "Samuel Chim Puc Ta",
+      "correo": "samuel@gmail.com",
+      "contraseña": "samuel",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "Gerardo Alexis Esparza Sanchez",
+      "correo": "gerardo@gmail.com",
+      "contraseña": "gerardo",
+      "rol": "Profesor"
+    },
+    {
+      "nombre": "tuyub",
+      "correo": "tuyub@gmail.com",
+      "contraseña": "tuyub",
+      "rol": "Profesor"
+    },
+    {
+      "nombre": "leo",
+      "correo": "leo@gmail.com",
+      "contraseña": "leo1",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "alexis",
+      "correo": "gerardoesparza05@gmail.com",
+      "contraseña": "alexis1",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "jose",
+      "correo": "jose@gmail.com",
+      "contraseña": "jose",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "Ricardo Alonzo Uc",
+      "correo": "ricardohuchimz2206@gmail.com",
+      "contraseña": "ricardo",
+      "rol": "Profesor"
+    },
+    {
+      "nombre": "samuel chim",
+      "correo": "samuchim15@gmail.com",
+      "contraseña": "samuel",
+      "rol": "Estudiante"
+    },
+    {
+      "nombre": "pedro",
+      "correo": "pedro@gmail.com",
+      "contraseña": "pedro",
+      "rol": "Estudiante"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "fecha": "2025-03-07",
+    "hora": "10:00",
+    "profesor": "Juan Pérez",
+    "alumno": "María García",
+    "clase": "Matemáticas"
+  },
+  {
+    "fecha": "2025-03-08",
+    "hora": "13:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "Guitarra avanzada"
+  },
+  {
+    "fecha": "2025-03-08",
+    "hora": "08:00",
+    "profesor": "963d4950-c2a0-49a3-ab21-109d63aaad02",
+    "alumno": "",
+    "clase": "Guitarra avanzada"
+  },
+  {
+    "fecha": "2025-03-07",
+    "hora": "16:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-07",
+    "hora": "14:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "Guitarra avanzada"
+  },
+  {
+    "fecha": "2025-03-09",
+    "hora": "14:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "naan"
+  },
+  {
+    "fecha": "2025-03-10",
+    "hora": "14:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-10",
+    "hora": "16:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "naan"
+  }
+]

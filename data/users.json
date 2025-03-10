@@ -1,0 +1,88 @@
+{
+  "usuarios": [
+    {
+      "id": "2a21b8a7-b49b-492b-a62f-abc4203e1748",
+      "nombre": "laila",
+      "correo": "laila@gmail.com",
+      "contraseña": "laila",
+      "rol": "Profesor"
+    },
+    {
+      "id": "b40bd4ce-4570-4aac-bc60-4ea3dd127de3",
+      "nombre": "samuel chim",
+      "correo": "samuchim10@gmail.com",
+      "contraseña": "samuel",
+      "rol": "Profesor"
+    },
+    {
+      "id": "6e5d4226-4dc0-45e5-a665-edc6f7b89038",
+      "nombre": "alex",
+      "correo": "alex@daouse.com",
+      "contraseña": "alex",
+      "rol": "Profesor"
+    },
+    {
+      "id": "9f319996-47ac-459d-95da-f7be74b2b139",
+      "nombre": "pepe",
+      "correo": "pepe@gmail.com",
+      "contraseña": "pepe",
+      "rol": "Profesor"
+    },
+    {
+      "id": "54e264f5-ef5b-41eb-a4d3-0fae0a56901e",
+      "nombre": "sam",
+      "correo": "sam@gmail.com",
+      "contraseña": "sam",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "5a9dc641-4df7-48db-8698-5483623e40d9",
+      "nombre": "ejemplo",
+      "correo": "ejemplooo@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "29e1a9db-9b89-479c-84c7-4beb0db3805c",
+      "nombre": "ejemplo3",
+      "correo": "ejemplo3@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+      "nombre": "ejemplo4",
+      "correo": "ejemplo4@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "91746f7d-0551-46c2-b8a5-00f952c81301",
+      "nombre": "ejemplo5",
+      "correo": "ejemplo5@gmail.com",
+      "contraseña": "12345",
+      "rol": "Profesor"
+    },
+    {
+      "id": "a2a43b03-3ee3-4e44-a25a-ed360607331f",
+      "nombre": "ppp",
+      "correo": "juan@perez.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
+    },
+    {
+      "id": "96afbe9f-3913-4936-86e1-c76c5863eb7d",
+      "nombre": "Raul",
+      "correo": "Raul@gmail.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
+    },
+    {
+      "id": "963d4950-c2a0-49a3-ab21-109d63aaad02",
+      "nombre": "ezparza",
+      "correo": "alexis@gmail.com",
+      "contraseña": "12345",
+      "rol": "Profesor"
+    }
+  ]
+}
