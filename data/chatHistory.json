@@ -1,0 +1,35 @@
+[
+  {
+    "user": "👨‍🏫 Profesor",
+    "profesorId": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumnoId": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "message": "hola",
+    "timestamp": "2025-03-25T03:11:10.094Z"
+  },
+  {
+    "user": "🎓 Alumno",
+    "alumnoId": null,
+    "message": "hola que tal",
+    "timestamp": "2025-03-25T03:11:28.750Z"
+  },
+  {
+    "user": "👨‍🏫 Profesor",
+    "profesorId": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumnoId": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "message": "hoal",
+    "timestamp": "2025-03-25T03:11:34.469Z"
+  },
+  {
+    "user": "🎓 Alumno",
+    "alumnoId": null,
+    "message": "Hola profesor, como esta?",
+    "timestamp": "2025-03-25T03:59:24.140Z"
+  },
+  {
+    "user": "👨‍🏫 Profesor",
+    "profesorId": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumnoId": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "message": "Hola que tal, bien y tu?",
+    "timestamp": "2025-03-25T03:59:35.275Z"
+  }
+]

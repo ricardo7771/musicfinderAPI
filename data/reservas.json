@@ -54,5 +54,54 @@
     "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
     "alumno": "",
     "clase": "naan"
+  },
+  {
+    "fecha": "2025-03-24",
+    "hora": "14:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-24",
+    "hora": "16:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "clase": "Guitarra avanzada"
+  },
+  {
+    "fecha": "2025-03-24",
+    "hora": "17:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-25",
+    "hora": "09:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "868d588a-e794-4d51-ab49-04ee82cd065c",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-25",
+    "hora": "15:00",
+    "profesor": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumno": "cca87935-5e82-4236-a282-c912d4f1ab95",
+    "clase": "Bateria"
+  },
+  {
+    "fecha": "2025-03-25",
+    "hora": "13:00",
+    "profesor": "ec012d73-b2fa-46dd-bb40-c03ff259273e",
+    "alumno": "",
+    "clase": "Piano sinfonico"
+  },
+  {
+    "fecha": "2025-03-25",
+    "hora": "16:00",
+    "profesor": "ec012d73-b2fa-46dd-bb40-c03ff259273e",
+    "alumno": "",
+    "clase": "Guitarra acustica"
   }
 ]

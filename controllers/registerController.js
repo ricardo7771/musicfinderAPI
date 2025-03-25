@@ -45,7 +45,7 @@ exports.register = (req, res) => {
       rating: 0,  // Valor por defecto
       imagen: "assets/default_profile.jpg",  // Imagen por defecto
       descripcion: "Descripción no disponible",  // Descripción por defecto
-      rol: "Profesor"
+      rol: rol
 
     };
 

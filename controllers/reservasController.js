@@ -84,10 +84,24 @@ const eliminarReserva = (req, res) => {
 
   return res.status(200).json({ message: "Reserva eliminada correctamente" });
 };
+// Obtener reservas por profesor
+const getReservasPorProfesor = (req, res) => {
+  const { profesorId } = req.params;
+  const reservas = leerReservas();
 
+  // Filtrar reservas del profesor
+  const reservasProfesor = reservas.filter((reserva) => reserva.profesor === profesorId);
+
+  if (reservasProfesor.length > 0) {
+    return res.status(200).json(reservasProfesor);
+  } else {
+    return res.status(404).json({ message: "No tienes alumnos con reservas." });
+  }
+};
 module.exports = {
   getReservas,
   crearReserva,
   actualizarReserva,
   eliminarReserva,
+  getReservasPorProfesor,
 };

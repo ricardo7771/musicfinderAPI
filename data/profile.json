@@ -82,7 +82,7 @@
       "rating": 0,
       "imagen": "assets/default_profile.jpg",
       "descripcion": "Descripción no disponible",
-      "rol": "Profesor"
+      "rol": "Estudiante"
     },
     {
       "id": "91746f7d-0551-46c2-b8a5-00f952c81301",
@@ -136,6 +136,144 @@
       "rating": 0,
       "imagen": "assets/default_profile.jpg",
       "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "8e752b15-13a2-48e0-a6d1-06f1a72da073",
+      "correo": "pedro2@gmail.com",
+      "nombre": "pedrito estudiante",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "33f4f982-38a7-4cdc-b8d2-ba024dddb560",
+      "correo": "ru@gmail.com",
+      "nombre": "Ricardo Alonzo Uc",
+      "instrumento": "Guitarra y saxofon",
+      "precio": "$200/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Buen conocimento en tocar saxofon",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "312cded7-b273-4f39-aad4-ec33abe22cb0",
+      "correo": "arturo@gmail.com",
+      "nombre": "Raul arturo",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "8bc34c2a-c177-40ec-9b37-b12a4d8d053a",
+      "correo": "Pedroprz@gmail.com",
+      "nombre": "Pedro Perez",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "868d588a-e794-4d51-ab49-04ee82cd065c",
+      "correo": "demo1@gmail.com",
+      "nombre": "Ejemplo demo",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "cca87935-5e82-4236-a282-c912d4f1ab95",
+      "correo": "ale@gmail.com",
+      "nombre": "Alejandro juarez",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "08d5fdcc-a469-49dd-b36a-6b3825f27238",
+      "correo": "psola@gmail.com",
+      "nombre": "pedro sola",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "ce1a7800-0a54-4084-be51-50b4fe940310",
+      "correo": "sola@gmail.com",
+      "nombre": "Pedrosola",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Profesor"
+    },
+    {
+      "id": "cf606907-abc0-4a7a-9194-7cebbedc16ed",
+      "correo": "ramirez@gmail.com",
+      "nombre": "Juan ramires",
+      "instrumento": "Instrumento no especificado",
+      "precio": "$0/hora",
+      "ubicacion": "Ubicación no especificada",
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Descripción no disponible",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "d1657fd8-9534-4d9d-ac44-ffc45992a50f",
+      "correo": "alberto@gmail.com",
+      "nombre": "Juan alberto",
+      "instrumento": "Guitarra",
+      "precio": "",
+      "ubicacion": {
+        "latitud": "20.96721034117117",
+        "longitud": "-89.68894958496095"
+      },
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Hola que tal",
+      "rol": "Profesor"
+    },
+    {
+      "id": "ec012d73-b2fa-46dd-bb40-c03ff259273e",
+      "correo": "demoprof@gmail.com",
+      "nombre": "profesro demo",
+      "instrumento": "piano",
+      "precio": "200",
+      "ubicacion": {
+        "latitud": "20.99445798686113",
+        "longitud": "-89.67281341552736"
+      },
+      "rating": 0,
+      "imagen": "assets/default_profile.jpg",
+      "descripcion": "Apasionado de la musica.",
       "rol": "Profesor"
     }
   ]

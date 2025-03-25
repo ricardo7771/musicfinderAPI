@@ -83,6 +83,83 @@
       "correo": "alexis@gmail.com",
       "contraseña": "12345",
       "rol": "Profesor"
+    },
+    {
+      "id": "8e752b15-13a2-48e0-a6d1-06f1a72da073",
+      "nombre": "pedrito estudiante",
+      "correo": "pedro2@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "33f4f982-38a7-4cdc-b8d2-ba024dddb560",
+      "nombre": "Ricardo uc",
+      "correo": "ru@gmail.com",
+      "contraseña": "12345",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "312cded7-b273-4f39-aad4-ec33abe22cb0",
+      "nombre": "Raul arturo",
+      "correo": "arturo@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "8bc34c2a-c177-40ec-9b37-b12a4d8d053a",
+      "nombre": "Pedro Perez",
+      "correo": "Pedroprz@gmail.com",
+      "contraseña": "12345",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "868d588a-e794-4d51-ab49-04ee82cd065c",
+      "nombre": "Ejemplo demo",
+      "correo": "demo1@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "cca87935-5e82-4236-a282-c912d4f1ab95",
+      "nombre": "Alejandro juarez",
+      "correo": "ale@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "08d5fdcc-a469-49dd-b36a-6b3825f27238",
+      "nombre": "pedro sola",
+      "correo": "psola@gmail.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
+    },
+    {
+      "id": "ce1a7800-0a54-4084-be51-50b4fe940310",
+      "nombre": "Pedrosola",
+      "correo": "sola@gmail.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
+    },
+    {
+      "id": "cf606907-abc0-4a7a-9194-7cebbedc16ed",
+      "nombre": "Juan ramires",
+      "correo": "ramirez@gmail.com",
+      "contraseña": "1234",
+      "rol": "Estudiante"
+    },
+    {
+      "id": "d1657fd8-9534-4d9d-ac44-ffc45992a50f",
+      "nombre": "Juan alberto",
+      "correo": "alberto@gmail.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
+    },
+    {
+      "id": "ec012d73-b2fa-46dd-bb40-c03ff259273e",
+      "nombre": "profesro demo",
+      "correo": "demoprof@gmail.com",
+      "contraseña": "1234",
+      "rol": "Profesor"
     }
   ]
 }

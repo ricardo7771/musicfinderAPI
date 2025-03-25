@@ -1,0 +1,28 @@
+[
+  {
+    "user": "🎓 Alumno",
+    "alumnoId": null,
+    "message": "hola que tal profesor",
+    "timestamp": "2025-03-25T03:07:43.625Z"
+  },
+  {
+    "user": "👨‍🏫 Profesor",
+    "profesorId": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumnoId": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "message": "hola alumno",
+    "timestamp": "2025-03-25T03:07:53.160Z"
+  },
+  {
+    "user": "🎓 Alumno",
+    "alumnoId": null,
+    "message": "Como estas?",
+    "timestamp": "2025-03-25T03:08:01.997Z"
+  },
+  {
+    "user": "👨‍🏫 Profesor",
+    "profesorId": "91746f7d-0551-46c2-b8a5-00f952c81301",
+    "alumnoId": "235b2e2f-ae71-4c11-9685-5bbbffd7b0db",
+    "message": "Bien y Tu?",
+    "timestamp": "2025-03-25T03:08:10.412Z"
+  }
+]
