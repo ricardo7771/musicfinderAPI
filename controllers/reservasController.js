@@ -1,39 +1,21 @@
-const fs = require("fs");
-const path = require("path");
-
-const reservasFilePath = path.join(__dirname, "../data/reservas.json");
-
-// Función para leer reservas desde el archivo JSON
-const leerReservas = () => {
-  try {
-    const data = fs.readFileSync(reservasFilePath, "utf8");
-    return JSON.parse(data);
-  } catch (error) {
-    return []; // Si hay error (archivo no existe o está vacío), devolvemos un array vacío
-  }
-};
-
-// Función para guardar reservas en el archivo JSON
-const guardarReservas = (reservas) => {
-  fs.writeFileSync(reservasFilePath, JSON.stringify(reservas, null, 2), "utf8");
-};
+const Reserva = require("../models/Reservas"); // Importamos el modelo de reservas
 
 // Obtener reservas por fecha
-const getReservas = (req, res) => {
+const getReservas = async (req, res) => {
   const { fecha } = req.params;
-  const reservas = leerReservas();
-
-  const reservasFiltradas = reservas.filter((reserva) => reserva.fecha === fecha);
-
-  if (reservasFiltradas.length > 0) {
-    return res.status(200).json(reservasFiltradas);
-  } else {
-    return res.status(404).json({ message: "No se encontraron reservas para esta fecha." });
+  
+  try {
+    const reservas = await Reserva.find({ fecha });
+    return reservas.length > 0
+      ? res.status(200).json(reservas)
+      : res.status(404).json({ message: "No se encontraron reservas para esta fecha." });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al obtener las reservas.", error });
   }
 };
 
 // Crear una nueva reserva
-const crearReserva = (req, res) => {
+const crearReserva = async (req, res) => {
   const { fecha } = req.params;
   const { hora, profesor, alumno, clase } = req.body;
 
@@ -41,63 +23,62 @@ const crearReserva = (req, res) => {
     return res.status(400).json({ message: "Faltan datos para crear la reserva." });
   }
 
-  const reservas = leerReservas();
-  const nuevaReserva = { fecha, hora, profesor, alumno, clase };
-  reservas.push(nuevaReserva);
-
-  guardarReservas(reservas);
-
-  return res.status(201).json({ message: "Reserva creada correctamente", reserva: nuevaReserva });
+  try {
+    const nuevaReserva = new Reserva({ fecha, hora, profesor, alumno, clase });
+    await nuevaReserva.save();
+    return res.status(201).json({ message: "Reserva creada correctamente", reserva: nuevaReserva });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al crear la reserva", error });
+  }
 };
 
 // Actualizar una reserva
-const actualizarReserva = (req, res) => {
+const actualizarReserva = async (req, res) => {
   const { fecha, hora } = req.params;
   const { profesor, alumno, clase } = req.body;
 
-  let reservas = leerReservas();
-  const reservaIndex = reservas.findIndex((r) => r.fecha === fecha && r.hora === hora);
-
-  if (reservaIndex === -1) {
-    return res.status(404).json({ message: "Reserva no encontrada." });
+  try {
+    const reserva = await Reserva.findOneAndUpdate(
+      { fecha, hora },
+      { profesor, alumno, clase },
+      { new: true }
+    );
+    return reserva
+      ? res.status(200).json({ message: "Reserva actualizada correctamente", reserva })
+      : res.status(404).json({ message: "Reserva no encontrada." });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al actualizar la reserva", error });
   }
-
-  reservas[reservaIndex] = { fecha, hora, profesor, alumno, clase };
-  guardarReservas(reservas);
-
-  return res.status(200).json({ message: "Reserva actualizada correctamente", reserva: reservas[reservaIndex] });
 };
 
 // Eliminar una reserva
-const eliminarReserva = (req, res) => {
+const eliminarReserva = async (req, res) => {
   const { fecha, hora } = req.params;
 
-  let reservas = leerReservas();
-  const reservaIndex = reservas.findIndex((r) => r.fecha === fecha && r.hora === hora);
-
-  if (reservaIndex === -1) {
-    return res.status(404).json({ message: "Reserva no encontrada." });
+  try {
+    const reserva = await Reserva.findOneAndDelete({ fecha, hora });
+    return reserva
+      ? res.status(200).json({ message: "Reserva eliminada correctamente" })
+      : res.status(404).json({ message: "Reserva no encontrada." });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al eliminar la reserva", error });
   }
-
-  reservas.splice(reservaIndex, 1);
-  guardarReservas(reservas);
-
-  return res.status(200).json({ message: "Reserva eliminada correctamente" });
 };
+
 // Obtener reservas por profesor
-const getReservasPorProfesor = (req, res) => {
+const getReservasPorProfesor = async (req, res) => {
   const { profesorId } = req.params;
-  const reservas = leerReservas();
 
-  // Filtrar reservas del profesor
-  const reservasProfesor = reservas.filter((reserva) => reserva.profesor === profesorId);
-
-  if (reservasProfesor.length > 0) {
-    return res.status(200).json(reservasProfesor);
-  } else {
-    return res.status(404).json({ message: "No tienes alumnos con reservas." });
+  try {
+    const reservasProfesor = await Reserva.find({ profesor: profesorId });
+    return reservasProfesor.length > 0
+      ? res.status(200).json(reservasProfesor)
+      : res.status(404).json({ message: "No tienes alumnos con reservas." });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al obtener las reservas del profesor", error });
   }
 };
+
 module.exports = {
   getReservas,
   crearReserva,

@@ -1,11 +1,13 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const os = require('os');
-const http = require("http");  // Necesario para usar Socket.io
-const { Server } = require("socket.io"); // Importar Socket.io
+const http = require("http");
+const { Server } = require("socket.io");
 const fs = require("fs");
 const path = require("path");
+require("dotenv").config(); // Cargar variables de entorno
 
 // Importación de controladores
 const HomeAlumnoController = require("./controllers/HomeAlumnoController");
@@ -17,10 +19,19 @@ const passwordController = require("./controllers/passwordController");
 const reservasController = require("./controllers/reservasController");
 
 const app = express();
-const server = http.createServer(app);  // Crear un servidor HTTP
-const io = new Server(server, { cors: { origin: "*" } }); // Configurar Socket.io
+const server = http.createServer(app);
+const io = new Server(server, { cors: { origin: "*" } });
 
 const PORT = process.env.PORT || 3000;
+const MONGO_URI = process.env.MONGO_URI;
+
+// Conectar a MongoDB Atlas
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("Conectado a MongoDB Atlas"))
+.catch(err => console.error("Error conectando a MongoDB:", err));
 
 // Middleware
 app.use(bodyParser.json());
@@ -42,8 +53,7 @@ app.get("/reservas/:fecha", reservasController.getReservas);
 app.post("/reservas/:fecha", reservasController.crearReserva);
 app.put("/reservas/:fecha/:hora", reservasController.actualizarReserva);
 app.delete("/reservas/:fecha/:hora", reservasController.eliminarReserva);
-app.get("/reservas/profesor/:profesorId",reservasController.getReservasPorProfesor);
-
+app.get("/reservas/profesor/:profesorId", reservasController.getReservasPorProfesor);
 
 // Ruta del archivo de historial
 const historyFilePath = path.join(__dirname, "./data/chatHistory.json");
@@ -54,7 +64,7 @@ const loadChatHistory = () => {
         const data = fs.readFileSync(historyFilePath, "utf8");
         return JSON.parse(data);
     } catch (error) {
-        return [];  // Si hay un error (ej. el archivo no existe), retorna un array vacío
+        return [];
     }
 };
 
@@ -68,18 +78,13 @@ let chatHistory = loadChatHistory();
 
 io.on("connection", (socket) => {
     console.log("Usuario conectado:", socket.id);
-
-    // Enviar historial de chat al nuevo usuario
     socket.emit("chatHistory", chatHistory);
 
     socket.on("sendMessage", ({ profesorId, alumnoId, message, sender }) => {
         const userType = sender === "profesor" ? "👨‍🏫 Profesor" : "🎓 Alumno";
         const newMessage = { user: userType, profesorId, alumnoId, message, timestamp: new Date().toISOString() };
-
-        // Agregar mensaje al historial y guardar
         chatHistory.push(newMessage);
         saveChatHistory(chatHistory);
-
         io.emit("message", newMessage);
     });
 
@@ -87,6 +92,7 @@ io.on("connection", (socket) => {
         console.log("Usuario desconectado:", socket.id);
     });
 });
+
 // Obtener la IP local
 const getLocalIP = () => {
     const networkInterfaces = os.networkInterfaces();
@@ -100,7 +106,6 @@ const getLocalIP = () => {
     return "localhost";
 };
 
-// Iniciar el servidor con Express + Socket.io
 const localIP = getLocalIP();
 server.listen(PORT, "0.0.0.0", () => {
     console.log(`Servidor corriendo en http://${localIP}:${PORT}`);
